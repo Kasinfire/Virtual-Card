@@ -1,0 +1,179 @@
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-container {
+  background-color: var(--bgCard);
+  box-shadow: var(--shadow);
+  -webkit-box-shadow: var(--webkit-shadow);
+  -moz-box-shadow: var(--moz-shadow);
+
+  width: 90%;
+  max-width: 1100px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: all 1s ease-out;
+
+  border-radius: 8px;
+}
+
+.card-face {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  transform: rotateY(0deg);
+  box-sizing: border-box;
+  padding: 5% 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-top,
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: clamp(0.6rem, 1vw, 0.8rem);
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+}
+
+.card-identity {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.name-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  transform: translateY(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 255, 0, 0.07) 45%,
+    rgba(0, 255, 0, 0.07) 55%,
+    transparent
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-name {
+  position: relative;
+  z-index: 1;
+}
+
+.card-role {
+  margin: 10px 0 0;
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 1.6vw, 1.1rem);
+  letter-spacing: 0.1em;
+  text-align: center;
+  opacity: 0.85;
+  text-shadow: 0 0 6px var(--text);
+}
+
+.card-email {
+  margin-top: 10px;
+  font-family: var(--font-body);
+  font-size: clamp(0.7rem, 1.1vw, 0.9rem);
+  text-align: center;
+  opacity: 0.55;
+  text-shadow: none;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 5% 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-grid {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-tag {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.3vw, 0.95rem);
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 255, 0, 0.35);
+  border-radius: 4px;
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  opacity: 1;
+  border-color: var(--text);
+}
+
+.github-link {
+  font-family: var(--font-body);
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.3vw, 0.95rem);
+  letter-spacing: 0.05em;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 255, 0, 0.35);
+  border-radius: 4px;
+  opacity: 0.85;
+  transition:
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-icon {
+  font-size: 1.1em;
+}
