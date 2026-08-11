@@ -1,7 +1,7 @@
 # Matrix Interactive Business Card
 A 3D interactive digital portfolio card built with React. It features a Matrix-style digital rain effect, neon glow styling, and physics-based interactions to showcase your perfil.
 
-## ˗ˏˋ ★ [**Click here to view**](link) ★ ˎˊ˗ 
+## ˗ˏˋ ★ [**Click here to view**](https://virtual-card-six-livid.vercel.app/) ★ ˎˊ˗ 
 
 
 ### What does it do?
@@ -21,7 +21,7 @@ A 3D interactive digital portfolio card built with React. It features a Matrix-s
 
 ![View of the card](./docs/image2.png)
 
-(*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ [**Link**](link)
+(*ᴗ͈ˬᴗ͈)ꕤ*.ﾟ [**Link**](https://virtual-card-six-livid.vercel.app/)
 
 ---
 
